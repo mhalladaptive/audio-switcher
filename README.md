@@ -10,6 +10,7 @@ Open Terminal on your Mac, navigate to the folder with AudioSwitch.swift and run
 swiftc -framework Cocoa -framework CoreAudio AudioSwitcher.swift -o AudioSwitcher && ./AudioSwitcher
 
 
+---
 That's it. A speaker icon will appear in your menu bar.
 
 ## Make it a permanent app (optional)
