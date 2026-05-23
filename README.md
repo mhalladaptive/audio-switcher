@@ -6,20 +6,22 @@ A lightweight menu bar app for quickly switching audio input and output devices 
 
 Open Terminal on your Mac, navigate to the folder with AudioSwitch.swift and run:
 
-
+```
 swiftc -framework Cocoa -framework CoreAudio AudioSwitcher.swift -o AudioSwitcher && ./AudioSwitcher
+```
 
-
----
 That's it. A speaker icon will appear in your menu bar.
+
 
 ## Make it a permanent app (optional)
 To run it as a proper `.app` you can move to Applications and launch at login:
 
 # Build
+```
 swiftc -framework Cocoa -framework CoreAudio AudioSwitcher.swift -o AudioSwitcher
-
+```
 # Wrap in a .app bundle
+```
 mkdir -p AudioSwitcher.app/Contents/MacOS
 cp AudioSwitcher AudioSwitcher.app/Contents/MacOS/AudioSwitcher
 cat > AudioSwitcher.app/Contents/Info.plist << 'EOF'
@@ -40,11 +42,15 @@ cat > AudioSwitcher.app/Contents/Info.plist << 'EOF'
 </dict>
 </plist>
 EOF
+```
 
 # Move to Applications
-mv AudioSwitcher.app /Applications/
+move   AudioSwitcher.app -> Applications Folder
 
-# Open it
+Launch as any other Application in the Applications Folder
+
+# Open it in terminal
+```
 open /Applications/AudioSwitcher.app
 ```
 
